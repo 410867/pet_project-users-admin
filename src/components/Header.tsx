@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const baseBtn =
-    "inline-flex items-center justify-center h-[48px] w-[200px] py-[14px] px-[112px] " +
+    "inline-flex items-center justify-center h-[48px] w-[200px] py-[14px] " +
     "border border-[#C4C4C4] font-rubik font-light text-[14px] leading-[20px] tracking-[0.2px] text-black";
 
   const selectedBtn = "bg-[#C4C4C4] hover:bg-[#bdbdbd]";
