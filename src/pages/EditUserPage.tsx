@@ -86,7 +86,7 @@ export default function EditUserPage() {
 
       <div className="mt-8 flex gap-3 justify-end">
         {changed && (
-          <button onClick={onUndo} className="px-4 py-3.5 w-[100px] border border-[#E3E8EE]">
+          <button onClick={onUndo} className="px-4 py-3.5 w-[100px] border border-[#E3E8EE] cursor-pointer">
             Undo
           </button>
         )}
@@ -94,7 +94,7 @@ export default function EditUserPage() {
           onClick={onSave}
           disabled={!changed || saveMutation.isPending}
           className={
-            "px-4 py-3.5 w-[200px] " +
+            "px-4 py-3.5 w-[200px] cursor-pointer " +
             (changed
               ? "bg-slate-900 text-white"
               : "bg-white text-[#C4C4C4] border border-[#E3E8EE] cursor-not-allowed")

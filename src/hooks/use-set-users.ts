@@ -3,10 +3,6 @@ import { setUsers } from "../api/users";
 import type { UserItem } from "../types";
 import { replaceUserAt } from "../features/users/editUser.logic";
 
-/**
- * Save a single user into the list at selectedIndex.
- * On success writes fresh list to the cache.
- */
 export const useSetUsers = (users: UserItem[] | undefined, selectedIndex: number) => {
   const qc = useQueryClient();
 
